@@ -1,0 +1,30 @@
+﻿<!--Define a main window as a host application.
+    Set the VideoRay UI namespace so we can use videoray controls if desired
+-->
+<Window x:Class="vrInstrumentHostSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vrUI="clr-namespace:VideoRay.UI;assembly=vrLibUI" 
+        Title="Main Window" Height="250" Width="500"
+        Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" FontSize="12" >
+            Simple Instrument Sample.<LineBreak/>
+            Illustrates basic functionallity of Cockpit plugin instruments<LineBreak/> 
+            Illustrates basic usage of the ROV object and how to connect it to a simple instrument.
+            <LineBreak/>
+            <LineBreak/>
+            The slider below can be used to simulate changing the ROV magnetic heading.
+        </TextBlock>
+        <vrUI:LabeledNumericSlider x:Name="RovHeadingSlider" Grid.Row="1" SliderChanged="RovHeadingSlider_SliderChanged"  LabelText="ROV Heading" Minimum="0" Maximum="360"  TextFormat="F2" SliderScale="1.5"   VerticalAlignment="Center" HorizontalAlignment="Stretch"  Height="100" ></vrUI:LabeledNumericSlider> 
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center">
+            <Button x:Name="Hide_Btn" Width="Auto" Margin="15" Click="Hide_Click">Hide All Instruments</Button>
+            <Button x:Name="Show_Btn" Width="Auto" Margin="15" Click="Show_Click">Show All Instruments</Button>
+        </StackPanel>        
+    </Grid>
+</Window>
