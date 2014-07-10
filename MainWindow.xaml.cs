@@ -32,6 +32,9 @@ namespace vrInstrumentHostSample
             VideoRay.UI.Instrument.SimpleStopwatch sw = new VideoRay.UI.Instrument.SimpleStopwatch();
             instrument.Add(sw);
 
+            VideoRay.UI.Instrument.RibbonCompass ribbon = new VideoRay.UI.Instrument.RibbonCompass();
+            instrument.Add(ribbon);
+
             VideoRay.UI.Instrument.SimpleCompass compass = new VideoRay.UI.Instrument.SimpleCompass();
             instrument.Add(compass);
 

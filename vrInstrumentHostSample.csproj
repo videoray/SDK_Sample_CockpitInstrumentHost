@@ -104,6 +104,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Ribbon\RibbonCompass.csproj">
+      <Project>{5f212d67-c154-4741-b2ed-b2b9f75f6f2d}</Project>
+      <Name>RibbonCompass</Name>
+    </ProjectReference>
     <ProjectReference Include="SimpleCompass\SimpleCompass.csproj">
       <Project>{71eb7084-a822-4fc5-87c3-3e83140ec6a4}</Project>
       <Name>SimpleCompass</Name>
