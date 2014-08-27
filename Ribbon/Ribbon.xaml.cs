@@ -76,7 +76,7 @@ namespace VideoRay.UI.Instrument
             get
             {
 
-                Rect r = new Rect(100, 100, TrueWidth*3, TrueHeight*3);
+                Rect r = new Rect(200, 200, TrueWidth*3, TrueHeight*3);
                 return r;
 
             }

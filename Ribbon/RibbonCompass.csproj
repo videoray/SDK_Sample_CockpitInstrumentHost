@@ -60,12 +60,12 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="RibbonCompass.xaml">
+    <Page Include="Ribbon.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="RibbonCompass.xaml.cs">
-      <DependentUpon>RibbonCompass.xaml</DependentUpon>
+    <Compile Include="Ribbon.xaml.cs">
+      <DependentUpon>Ribbon.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -93,6 +93,9 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ribbon_concept_5.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\ribbon_concept_13.png" />
